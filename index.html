@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻雀</title>
+</head>
+
+<body bgcolor="#CEE6C1">
+    <a>場:</a><input id="ba" size="1" type="text"><a>局</a><input id="kyoku" size="1" type="text"><a>本場</a><input id="honba" size="1" type="text" value="0"><a>供託</a><input id="kyotaku" size="1" type="text" value="0"><a>人数</a><input id="ninzu" size="1" type="text">
+    <p>場 = 東:0 南:1 西:2 北:3 人数 = 三人:3 四人:4</p>
+    <a>面前手牌:</a><input id="text" size="48" type="text"><br>
+    <a>副露:</a><input id="furoPai" size="24" type="text"><a>暗槓:</a><input id="ankan" size="18" type="text">
+    <p>カンマ区切りで入力してください 萬子:1, 筒子:2, 索子:3, 字牌:4<br>(例:11,12,12,13,13,14,22,22,22,36,37,38,42,42)</p>
+    <p>副露、暗槓はブロックごとに/で分ける(例:11,11,11/23,24,25/22,22,22,22)</p>
+    <a>ドラ:</a><input id="dora" size="1" type="text"><a>裏ドラ:</a><input id="uradora" size="1" type="text"><a>巡目:</a><input id="zyunme" size="1" type="text" value="1"><a>リーチ:</a><input id="reach" size="1" type="text"><a>上がり方:</a><input id="hora" size="1" type="text"><br>
+    <a>あがり牌:</a><input id="agari" size="1" type="text"><a>槍槓:</a><input id="tyankan" size="1" type="text" value="0"><a>自家:</a><input id="zitya" size="1" type="text"><a>北抜き:</a><input id="penuki" size="1" type="text"><a>一発:</a><input id="ippatu" size="1" type="text" value="0">
+    <p>巡目 = 天和地和:2 その他:1 海底河底:0, リーチ = 立直なし:0 リーチ:1 ダブリー:2<br>上がり方 = tumo / ron, 槍槓 = 槍槓:1 嶺上:2 その他:0<br>自家 = 東一局時に東家を0として数えた自分の番号 一発 = 一発:1 その他:0</p>
+    <button onclick="Click()">確定</button>
+
+    <div id="stage">
+        <!-- <div><img id="p1hand0" class="p1hand" src="pai/11.gif"><img id="p1hand1" class="p1hand" src=""><img id="p1hand2" class="p1hand" src=""><img id="p1hand3" class="p1hand" src=""><img id="p1hand4" class="p1hand" src=""><img id="p1hand5" class="p1hand" src=""><img id="p1hand6" class="p1hand" src=""><img id="p1hand7" class="p1hand" src=""><img id="p1hand8" class="p1hand" src=""><img id="p1hand9" class="p1hand" src=""><img id="p1hand10" class="p1hand" src=""><img id="p1hand11" class="p1hand" src=""><img id="p1hand12" class="p1hand" src=""><img id="p1hand13" class="p1hand" src=""><img id="p1hand14" class="p1hand" src=""></div> -->
+    </div>
+
+    <p id="yakuResult"></p>
+    <p id="hanResult"></p>    
+
+    <script src="yaku.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
